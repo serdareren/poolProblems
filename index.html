@@ -1,0 +1,122 @@
+<html>
+  <head>
+    <title>Pool</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="CSS/main.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+
+    <style>
+      #fllscrn{position: absolute; top:0px; right:0px; width: 80px;height: 80px;background:url(IMG/icons.4ai-17a.png); z-index: 100; cursor:nwse-resize;} 
+      #fllscrn:hover{transform:scale(1.02);}             
+    </style>
+    <script>
+      function fullScreen() {
+        parent.toggleFullScreen();
+      }
+    </script>
+    <div id="fllscrn" onClick="fullScreen();"></div>
+    <div id="main" >
+
+      <div id="tap_left" class="taps" style="left: 99px;background-image: url(IMG/left_up.png); display: none; ">
+      <img src="IMG/vana_up_left.png" width="45" height="23" style="left: 42px;top: -17px;position: absolute;z-index: 40;">
+      </div>
+      
+      <div style="width:90.2px;height:491px;overflow: hidden;position: absolute;left: 143px;top: 169px;">
+        <div id="left_fill1" class="filling" style="left: 0;top: -31px;"></div>
+      </div>
+      
+      <div id="tap_middle_left" class="taps_middle" style="left: 360px;background-image: url(IMG/left_mid.png); display: none; ">
+      <img src="IMG/vana_up_left.png" width="45" height="23" style="left: 22px;top: -17px;position: absolute;z-index: 40;">
+      </div>
+      
+      <div style="width:90.2px;height:491px;overflow: hidden;position: absolute;left: 380px;top: 169px;">
+      <div id="left_fill3" class="filling" style="left: 0;top: -30px;"></div>
+      </div>
+      
+      <div id="tap_right" class="taps" style="right: 1008px;background-image: url(IMG/right_up.png); display: none; ">
+      <img src="IMG/vana_up_right.png" width="45" height="23" style="left: 6px;top: -17px;position: absolute;z-index: 40;">
+      </div>
+      
+      <div style="width:90.2px;height:491px;overflow: hidden;position: absolute;left: 788px;top: 169px;">
+      <div id="left_fill2" class="filling" style="left: 0;top: -30px;"></div>
+      </div>
+      
+      <div id="tap_middle_right" class="taps_middle" style="right: 1266px;background-image: url(IMG/right_mid.png); display: none; ">
+      <img src="IMG/vana_up_right.png" width="45" height="23" style="left: 0px;top: -17px;position: absolute;z-index: 40;">
+      </div>
+      
+      <div style="width:90.2px;height:491px;overflow: hidden;position: absolute;left: 554px;top: 169px;">
+      <div id="left_fill4" class="filling" style="left: 0;top: -30px;"></div>
+      </div>
+      
+      <div id="tap_bottom_left" class="taps_bottom" style="left: 64px;background-image: url(IMG/left_bot.png);display: none;">
+      </div>
+      
+      <div style="width: 90.4px;height: 222px;overflow: hidden;position: absolute;top: 617px;left: 53px;z-index: 140;">
+      <div id="left_fill5" class="fill_bot" style="left: 0px; top: 0px; display: none;"></div>
+      </div>
+      
+      <div id="tap_bottom_right" class="taps_bottom" style="right: 969px;background-image: url(IMG/right_bot.png);display: none;">
+      </div>
+      
+      <div style="width: 90.4px;height: 222px;overflow: hidden;position: absolute;top: 618px;left: 878px;z-index: 140;">
+      <div id="left_fill6" class="fill_bot" style="right: 0px; top: 0px;display: none;"></div>
+      </div>
+        
+      
+      <div id="pool">
+      </div>
+      
+      <div id="waterContainer">
+      <div id="water" >
+      </div>
+      </div>
+                
+    <div id="water_liter" style="width: 40px; height: 10px; position: absolute; top: 634px; left: 19px;">
+      <div id="sign" style="width: 26px;height: 23px;position: absolute;border-bottom: 2px solid;left: -12px;bottom: 5px;"></div>
+      <div id="liter" style="width: 36px;height: 456px;left: 5px;position: absolute;bottom: 0;background-image: url(IMG/a.png);">
+        <span id="1" class="nums" style="top: -11px;left: 27px;">1</span>
+        <span id="09" class="nums" style="top: 33px;left: 26px;">0,90</span>
+        <span id="08" class="nums" style="top: 79px;left: 26px;">0,80</span>
+        <span id="07" class="nums" style="top: 122px;left: 26px;">0,70</span>
+        <span id="06" class="nums" style="top: 167px;left: 26px;">0,60</span>
+        <span id="05" class="nums" style="top: 211px;left: 26px;">0,50</span>
+        <span id="04" class="nums" style="top: 254px;left: 26px;">0,40</span>
+        <span id="03" class="nums" style="top: 298px;left: 26px;">0,30</span>
+        <span id="02" class="nums" style="top: 343px;left: 26px;">0,20</span>
+        <span id="01" class="nums" style="top: 386px;left: 26px;">0,10</span>
+        <span id="0" class="nums" style="top: 430px;left: 26px;">0</span>
+      </div>
+    </div>
+    <div id="clock" style="width: 191px;height: 80px;position: absolute;top: -590px;bottom: 0px;margin-top: auto;margin-bottom: auto;left: 416px;border: 4px solid;border-radius: 25px;z-index: 100;display: none;">
+      <span id="hour" class="hour" style="left: -103px;">4</span>
+      <span id="wqe" class="hour" style="left: -3px;">:</span>
+      <span id="min" class="hour" style="left: 97px;">50</span>
+    </div>
+      
+      <div id="equation">
+        <div id="question" ></div>
+      </div>
+
+      <div id="solution">
+        <div id="answer" ></div>
+        <div id="maths" ></div>
+      </div>
+    </div>
+    
+    <img id="play" src="IMG/play.png" width="128" height="128">
+    <img id="next" src="IMG/aiqeMngeT.png" width="144" height="30">
+    <img id="logo" src="IMG/Untitled.png" width="729" height="86">
+    
+    <div id="hide" style="display: none;"></div>
+    <div id="hide2" style="display: none;"></div>
+    <div id="hide3" style="display: none;"></div>
+    <div id="hide4" style="display: none;"></div>
+    <script src="JS/Tweenmax/TweenMax.min.js"></script>
+    <script src="JS/Tweenmax/TweenLite.min.js"></script>
+    <script src="JS/jquery-3.1.0.min.js"></script>
+    <script src="JS/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,194 @@
+@font-face 
+{
+  font-family: 'sab';
+  src: url('../FONT/tahoma/tahomabd.ttf');
+  src: local('Sab'), local('sab'), url('../FONT/tahoma/tahomabd.ttf') format('truetype');
+}
+body {
+  width: 1920px;
+  height: 1080px;
+  overflow: hidden;
+}
+#main {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+#pool {
+  width: 829px;
+  height: 440px;
+  position: absolute;
+  margin-top: 201px;
+  margin-left: 90px;
+  background-image: url(../IMG/havuz.png);
+  z-index: 50;
+  background-size: cover;
+}
+#waterContainer {
+  width: 779px;
+  height: 423px;
+  overflow: hidden;
+  z-index: 100;
+  position: absolute;
+  top: 202px;
+  left: 115px;
+}
+#water {
+  width: 779px;
+  height: 442px;
+  background-image: url(../IMG/water.png);
+  background-size: cover;
+  z-index: 65;
+  opacity: 0.6;
+  margin-top: 420px;
+}
+.taps {
+  width: 93px;
+  height: 78px;
+  position: absolute;
+  background-size: cover;
+  z-index: 71;
+  top: 132px;
+}
+.taps_middle {
+  width: 67px;
+  height: 57px;
+  position: absolute;
+  background-size: cover;
+  z-index: 71;
+  top: 148px;
+}
+.taps_bottom {
+  bottom: 424px;
+  width: 75px;
+  height: 67px;
+  position: absolute;
+  background-size: cover;
+  z-index: 126;
+}
+#equation {
+  right: 1002px;
+  top: 660px;
+  bottom: 0;
+  margin-bottom: auto;
+  margin-top: auto;
+  width: 854px;
+  height: 197px;
+  position: absolute;
+  background-image: url(../IMG/soru.png);
+  z-index: 70;
+}
+#question {
+  width: 888px;
+  height: 117px;
+  margin-top: 74px;
+  margin-left: 8px;
+  font-family: "sab";
+  font-size: x-large;
+}
+#solution {
+  display: none;
+  width: 772px;
+  height: 685px;
+  position: absolute;
+  z-index: 89;
+  left: 1130px;
+  top: 176px;
+  background-image: url(../IMG/çözüm.png);
+  right: 0;
+  margin-right: auto;
+  margin-left: auto;
+}
+#answer {
+  width: 638px;
+  height: 208px;
+  margin-left: 47px;
+  font-family: "sab";
+  font-size: x-large;
+  margin-top: 61px;
+}
+#maths {
+  width: 697px;
+  height: 261px;
+  margin-left: 100px;
+  font-family: "sab";
+  font-size: x-large;
+  margin-top: 59px;
+}
+.filling {
+  background-image: url(../IMG/sprit_up.png);
+  width: 90.2px;
+  height: 491px;
+  position: absolute;
+  z-index: 55;
+  display: none;
+}
+.fill_bot {
+  background-image: url(../IMG/sprit_bot.png);
+  width: 90.4px;
+  height: 222px;
+  position: absolute;
+  z-index: 55;
+  display: none;
+}
+.nums {
+  display: inline-block;
+  padding: 10.5px 0px;
+  position: absolute;
+}
+.hour {
+  font-family: "sab";
+  font-size: 65px;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  position: absolute;
+  text-align: center;
+  padding: 0 0;
+}
+#indicator {
+  background-image: url(../IMG/1.png);
+  width: 200px;
+  height: 200px;
+  left: 407px;
+  top: 180px;
+  position: absolute;
+  display: none;
+  z-index: 100;
+}
+#indicator1 {
+  background-image: url(../IMG/2.png);
+  width: 200px;
+  height: 200px;
+  left: -1px;
+  top: -1px;
+  position: absolute;
+  transform: rotate(60deg);
+}
+.percent {
+  font-family: "sab";
+  font-size: x-large;
+  position: absolute;
+  display: inline-block;
+}
+#next {
+  position: absolute;
+  bottom: 50px;
+  right: 50px;
+  cursor: pointer;
+  z-index: 120;
+  display: none;
+}
+#play {
+  position: absolute;
+  top:350px;
+  left:450px;
+  z-index: 130;
+}
+#logo {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
